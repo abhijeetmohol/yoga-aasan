@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			YOGA-ASSIGNMENT
+		</title>
+		<link rel="icon" type="image/x-icon" href="https://cdn0.iconfinder.com/data/icons/fitness-95/24/meditation-512.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<style>
+		*{
+			margin:0px;
+			padding:0px;		
+		}
+		body{
+			font-family: 'Open Sans', sans-serif;
+			background-color:black;
+		}
+		.main-wrapper-header{
+			width:100%;
+			background-color:white;
+			margin:0px auto;
+		}
+		.inner-container{
+			width:1254px;
+			margin:0px auto;
+		}
+		.logo-div{
+			width:370px;
+			margin-bottom:15px;
+			display:inline-block;
+			vertical-align:top;
+			margin-top:20px;
+		}
+		.ul-div{
+			margin-left:-4px;
+			width:883px;
+			
+			display:inline-block;
+			vertical-align:top;
+		}
+	   	.header{
+			display:inline-block;
+			font-size:20px;
+			vertical-align:top;
+			color: #484f5b;
+			text-align: right;
+			padding-top:50px;
+			padding-bottom:40px;
+		}
+		.margin{
+			margin-left:70px;
+		}
+		.banner-1{
+			width:100%;
+		}
+		.banner-1 .fisrt-inner-div{
+			padding-bottom:30px;
+			width:50%;
+			background-color:white;
+			display:inline-block;
+			vertical-align:top;
+			background-image:url(top-left-corner-leaf.png),url(top-left-corner-brush.png),url(shape-of-leaf.png),url(legs-dots.png);
+			background-repeat:no-repeat;
+			background-position:top left,0px 20px,220px 540px,100px 200px;
+			background-size:280px 135px, 127px 116px,90px 90px,180px 250px;
+			padding-bottom:71px;
+		}
+		.banner-1 .second-inner-div{
+			margin-left:-4px;
+			width:49.97%;
+			background-color:white;
+			display:inline-block;
+			padding-top: 41px;
+			vertical-align:top;
+			background-image:url(bottom-right-corner.png),url(bottom-right-brush.png),url(bottom-right-dots.png),url(top-right-dots.png),url(top-right-corner.png),url(top-right-brush.png);
+			background-repeat:no-repeat;
+			background-position:bottom right,bottom right,bottom right,460px 10px,top right,top right;
+			background-size:165px 125px,205px 90px,118px 162px,200px 100px,80px 155px,82px 185px;
+		}
+		.banner-1 .heading{
+			font-size:75px;
+			color: #484f5b;
+			font-weight: 700;
+			font-family: "Open Sans";
+			padding-top:165px;
+			margin-left:60px;
+			
+		}
+		.banner-1 .discription{
+			font-size:20px;
+			color: #484f5b;
+			margin-top:60px;
+			margin-left:60px;
+		}
+		.banner-1 .button{
+			font-size:21px;
+			line-height:32px;
+			font-weight: 700;
+			width:200px;
+			padding-top:10px;
+			padding-bottom:10px;
+			background-color:#e5c7c3;
+			text-align:center;
+			margin-top:80px;
+			margin-left:60px;
+			cursor:pointer;
+			border:1px solid #e5c7c3;
+			margin-bottom:141px;
+		}
+		.button:hover{
+			border:1px solid black;
+			background-color:white;
+			color:black;
+		}
+		.banner-1 .button-color{
+			color: #484f5b;
+			text-decoration:none;
+		}
+		.banner-2{
+			padding-bottom:120px;
+			width:100%;
+			margin:0px auto;
+			background-color: white;
+			background-image:url(banner-2.png);
+			background-repeat:no-repeat;
+			background-size:100% 801px;
+		}
+		.banner-2 .pregnent-woman{
+			font-size:75px;
+			color: #484f5b;
+			font-weight: 700;
+			padding-top:180px;
+			padding-left:80px;
+		}
+		.banner-2 .discription{
+			font-size:20px;
+			color: #484f5b;
+			padding-top:60px;
+			padding-left:80px;
+		}
+		.banner-2 .button{
+			font-size:21px;
+			line-height:32px;
+			font-weight: 700;
+			width:200px;
+			padding-top:10px;
+			padding-bottom:10px;
+			background-color:#e5c7c3;
+			text-align:center;
+			margin-top:80px;
+			margin-left:60px;
+			cursor:pointer;
+			border:1px solid #e5c7c3;
+			
+		}
+		.button:hover{
+			border:1px solid black;
+			background-color:white;
+			color:black;
+		}
+		.banner-2 .button-color{
+			color: #484f5b;
+			text-decoration:none;
+		}
+		.banner-3{
+			background-color:white;
+			
+			width:100%;
+			margin:0px auto;
+		}
+		.banner-3 .inner-div{
+			background-color:white;
+			width:1254px;
+			height:480px;
+			margin:0px auto;
+		}
+		.banner-3 .internal-div{
+			
+			width:418px;
+			display:inline-block;
+			vertical-align:top;
+			background-image:url(brush-position.png);
+			background-repeat:no-repeat;
+			background-size:300px 200px;
+			background-position:40px 100px;
+		}
+		.banner-3 .internal-div-2{
+				
+			width:418px;
+			margin-left:-4px;
+			display:inline-block;
+			vertical-align:top;
+			background-image:url(2nd-position-brush.png);
+			background-repeat:no-repeat;
+			background-size:300px 200px;
+			background-position:60px 100px;
+		}
+		.banner-3 .internal-div-3{
+			
+			width:417px;
+			margin-left:-4px;
+			display:inline-block;
+			vertical-align:top;
+			background-image:url(3rd-position-brush.png);
+			background-repeat:no-repeat;
+			background-size:300px 200px;
+			background-position:60px 100px;
+		}
+		.pad{
+			padding-top:140px;
+			padding-left:80px;
+		}
+		.banner-3 h2{
+			color: #484f5b;
+			text-align:center;
+			margin-top:100px;
+		}
+		.banner-3 .discription{
+			text-align:center;
+			color: #484f5b;
+			font-size:20px;
+			padding-bottom:45px;
+			margin-top:10px;
+		}
+		.banner-4{
+			padding-bottom:120px;
+			background-color:white;
+			width:100%;
+			
+			margin:0px auto;
+			background-image:url(Lady.png),url(3526847.jpg);
+			background-repeat:no-repeat;
+			background-size:695px 478px,100% 630px;
+			background-position:730px 80px,center center;
+		}
+		.banner-4 .heading{
+			font-size:58px;
+			color: #484f5b;
+			font-weight: 700;
+			padding-top:130px;
+			padding-left:80px;
+		}
+		.banner-4 .discription{
+			color: #484f5b;
+			font-size:20px;
+			
+			margin-top:50px;
+			margin-left:80px;
+		}
+		.banner-4 .button{
+			border:1px solid #e5c7c3;
+			font-size:21px;
+			line-height:32px;
+			font-weight: 700;
+			width:200px;
+			padding-top:10px;
+			padding-bottom:10px;
+			background-color:#e5c7c3;
+			text-align:center;
+			margin-top:30px;
+			margin-left:80px;
+			cursor:pointer;
+			
+		}
+		.button:hover{
+			border:1px solid black;
+			background-color:white;
+			color:black;
+		}
+		.banner-4 .button-color{
+			color: #484f5b;
+			text-decoration:none;
+		}
+		.banner-5{
+			width:100%;
+			padding-bottom:135px;
+			background-color:#e9e7e5;
+			margin:0px auto;
+			background-image:url('brush-5.png'),url(img-5.png);
+			background-repeat:no-repeat;
+			background-size:304px 125px,915px 478px;
+			background-position:750px 140px,0px 130px;
+		}
+		.banner-5 .heading{
+			font-size:58px;
+			color: #484f5b;
+			font-weight: 700;
+			padding-top:127px;
+			padding-left:800px;
+		}
+		.banner-5 .discription{
+			color: #484f5b;
+			font-size:20px;
+			
+			margin-top:50px;
+			margin-left:800px;
+		}
+		.banner-5 .button{
+			border:1px solid #e5c7c3;
+			font-size:21px;
+			line-height:32px;
+			font-weight: 700;
+			width:200px;
+			padding-top:10px;
+			padding-bottom:10px;
+			background-color:#e5c7c3;
+			text-align:center;
+			margin-top:30px;
+			margin-left:800px;
+			cursor:pointer;
+		}
+		.button:hover{
+			border:1px solid black;
+			background-color:white;
+			color:black;
+		}
+		.banner-5 .button-color{
+			color: #484f5b;
+			text-decoration:none;
+		}
+		.banner-6{
+			padding-bottom:70px;
+			width:100%;
+			background-color:white;
+			margin:0px auto;
+			background-image:url(banner-6.jpg);
+			background-repeat:no-repeat;
+			background-size:100% 956px;
+		}
+		.banner-6 .internal-div-1-galery{
+			width:356px;
+			
+			background-color:white;
+			display:inline-block;
+			vertical-align:top;
+			margin-left:120px;
+			margin-top:50px;
+			border:2px solid #dadada;
+			
+		}
+		.banner-6 .internal-div-2-galery{
+			width:356px;
+			background-color:white;
+			display:inline-block;
+			vertical-align:top;
+			margin-left:90px;
+			margin-top:50px;
+			border:2px solid #dadada;
+		}
+		.banner-6 .internal-div-3-galery{
+			width:356px;
+			background-color:white;
+			display:inline-block;
+			vertical-align:top;
+			margin-left:90px;
+			margin-top:50px;
+			border:2px solid #dadada;
+			
+		}
+		.banner-6 .heading{
+			color: #484f5b;
+			font-size: 58px;
+			text-align: center;
+			padding-top:90px;
+			font-weight: 700;
+		}
+		.banner-6 .discription{
+			color: #484f5b;
+			font-size: 20px;
+			text-align: center;
+			padding-top:53px;
+		}
+		.galary-disc{
+			padding-bottom: 20px;
+		}
+		.banner-6 .Facilis-Gravida{
+			color: #484f5b;
+			font-size: 33px;
+			text-align: center;
+			margin-top:30px;
+		}
+		.banner-6  .discription-1{
+			font-size: 17px;
+			color: #484f5b;
+			text-align:center;
+			margin-top:20px;
+		}
+		.banner-7{
+			
+			width:100%;
+			background-color:white;
+			margin:0px auto;
+			background-image:url(banner-7.jpg);
+			background-size:100% 735px;
+			background-repeat:no-repeat;
+		}
+		.banner-7 .internal-div-1{
+			width:720px;
+			
+			display:inline-block;
+			vertical-align:top;
+			padding-bottom:130px;
+		}
+		.banner-7 .internal-div-2{
+			margin-left:-4px;
+			width:719.5px;
+			padding-bottom:170px;
+			display:inline-block;
+			vertical-align:top;	
+		}
+		.banner-7 .heading{
+			font-size: 58px;
+			color: #484f5b;
+			font-weight: 700;
+			margin-left:65px;
+			padding-top:175px;
+			
+		}
+		.banner-7 .discription{
+			font-size: 20px;
+			color: #484f5b;
+			margin-left:65px;
+			margin-top:50px;
+		}
+		.banner-7 .social-media-div{
+			width:45px;
+			height:45px;
+			display:inline-block;
+			vertical-align:top;
+			background-color:#484f5b;
+			margin-top:50px;
+			cursor:pointer;
+		}
+		.insta{
+			background-image:url(394a7aaecd6b8ce44528649681d9fa05-removebg-preview.png);
+			background-repeat:no-repeat;
+			background-size:60px 60px;
+			background-position:center center;
+		}
+		.banner-7 .social-media-gap{
+			margin-left:20px;
+		}
+		.banner-7 .fb-gap{
+			margin-left:60px;
+		}
+		.banner-8{
+			padding-bottom:40px;
+			width:100%;
+			background-color:white;
+			margin:0px auto;
+			background-image:url(banner-8.jpg);
+			background-repeat:no-repeat;
+			background-size:100% 825px;
+		}
+		.banner-8 .heading{
+			color: #484f5b;
+			font-size: 58px;
+			text-align: center;
+			padding-top:90px;
+			font-weight: 700;
+		}
+		.banner-8 .discription{
+			color: #484f5b;
+			font-size: 20px;
+			text-align: center;
+			padding-top:53px;
+		}
+		.banner-8 input{
+			width:940px;
+			padding-top:20px;
+			padding-bottom:20px;
+			margin-top:70px;
+			border:2px solid #aeb6bf;
+			background-color:#e9e7e5;
+			margin-left:250px;
+			padding-left:35px;
+		}
+		.banner-8 input::placeholder{
+			color:#aeb6bf;	
+		}
+		.banner-8 .name{
+			padding-left:35px;
+		}
+		.banner-8 .name:focus-visible{
+			outline:0px;
+			
+		}
+		.banner-8 .input:focus-visible{
+			outline:0px;
+		}
+		.banner-8 .Gender{
+			margin-top:35px;
+		}
+		.banner-8 .Gender:focus-visible{
+			outline:0px;
+		}
+		.banner-8 .msg{
+			margin-top:35px;
+			padding-bottom:90px;
+			
+		}
+		.banner-8 .msg:focus-visible{
+			outline:0px;
+		}
+		.banner-8 .button{
+			
+			font-size:21px;
+			line-height:32px;
+			font-weight: 700;
+			width:200px;
+			padding-top:10px;
+			padding-bottom:10px;
+			background-color:#e5c7c3;
+			text-align:center;
+			margin-top:50px;
+			margin-left:650px;
+			cursor:pointer;
+			border:1px solid #e5c7c3;
+		}
+		.button:hover{
+			border:1px solid black;
+			background-color:white;
+			color:black;
+		}
+		.banner-8 .button-color{
+			color: #484f5b;
+			text-decoration:none;
+		}
+		.main-wrapper-footer{
+			width:100%;
+			
+			background-color:#474f5b;
+			margin:0px auto;
+		}
+		.footer-main-div{
+			margin:0px auto;
+			width:1254px;
+			
+			background-color:#474f5b;
+			padding-bottom:55px;
+
+		}
+		.footer-inner-div-1{
+			margin-left:65px;
+			width:190px;
+			
+			display:inline-block;
+			vertical-align:top;
+			color:white;
+			
+			
+		}
+		.heading-footer{
+			margin-left:3px;
+			font-size:22px;
+			font-weight:700;
+			padding-top:65px;
+		}
+		.address{
+			margin-top:37px;
+			font-size:15px;
+			margin-left:3px;
+		}
+		.web-site{
+			margin-top:37px;
+			text-decoration:none;
+			color:white;
+			font-size:15px;
+			margin-left:3px;
+		}
+		.footer-inner-div-2{
+			width:100px;
+			
+			margin-left:80px;
+			display:inline-block;
+			vertical-align:top;
+			margin-top:69px;
+			font-size:15px;
+			line-height:24px;
+			color:white;
+			padding-left:3px;
+			line-height:15px;
+			
+		}
+		.footer-inner-div-3{
+			width:150px;
+			
+			margin-left:80px;
+			display:inline-block;
+			vertical-align:top;
+			margin-top:69px;
+			font-size:15px;
+			line-height:24px;
+			color:white;
+			padding-left:3px;
+			line-height:15px;
+		}
+		.footer-inner-div-4{
+			width:130px;
+			
+			margin-left:80px;
+			display:inline-block;
+			vertical-align:top;
+			margin-top:69px;
+			font-size:15px;
+			line-height:24px;
+			color:white;
+			padding-left:3px;
+			line-height:15px;
+		}
+		.color{
+			text-decoration:none;
+			color:white;
+		}
+		.footer-inner-div-5{
+			width:230px;
+			height:198px;
+			margin-left:80px;
+			display:inline-block;
+			vertical-align:top;
+			margin-top:60px;
+			font-size:13px;
+			line-height:24px;
+			color:white;
+			padding-left:3px;
+			background-image:url(leaf-white.png);
+			background-repeat:no-repeat;
+			background-size:100px 80px;
+		}
+		.copyright{
+			margin-top:100px;
+		}
+		.social-media-div{
+			width:30px;
+			height:30px;
+			display:inline-block;
+			vertical-align:top;
+			background-color:white;
+			margin-top:10px;
+			cursor:pointer;
+		}
+		.social-media-gap{
+			margin-left:20px;
+		}
+		.ifram{
+			margin-left:90px; margin-top:150px;
+		}
+		</style>
+	</head>
+	<body>
+		
+		<div class="main-wrapper-header">
+			<!--header-start-->
+			<div class="inner-container">
+				<div class="logo-div">
+					<a href="#"><img src="logo_1.png" width="90px" height="90px"/></a>
+				</div>
+				<div class="ul-div">
+					<ul>
+						<a href=""><li class="header">Home</li></a>
+						<a href=""><li class="header margin"> About</li></a>
+						<a href=""><li class="header margin">Blog</li></a>
+						<a href=""><li class="header margin">Training</li></a>
+						<a href=""><li class="header margin">Event</li></a>
+						<a href=""><li class="header margin">Shop</li></a>
+						<a href=""><li class="header margin">Contact</li></a>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<!--header-end-->
+		<!--banner-1-start-->
+		<div class="banner-1">
+			<div class="fisrt-inner-div">
+				<img src="banner-1-lady.png"width="720px" height="750px"/>
+			</div>
+			<div class="second-inner-div">
+				<p class="heading">
+					Balance Your<br />
+					Body and Mind
+				</p>
+				<p class="discription">
+					Duis aute irure dolor in reprehenderit in voluptate velit<br /> esse cillum dolore eu fugiat nulla pariatur. Excepteur<br /> sint occaecat cupidatat.
+				</p>
+					<div class="button">
+						<a href="" class="button-color">JOIN US NOW</a>
+					</div>
+			</div>
+		</div>
+		<!--banner-1-end-->
+		<!--banner-2-start-->
+		<div class="banner-2">
+				<p class="pregnent-woman">
+					Pregnant<br />Women Program
+				</p>
+				<p class="discription">
+					Duis aute irure dolor in reprehenderit in voluptate velit <br />esse cillum dolore eu fugiat nulla pariatur. Excepteur <br />sint occaecat cupidatat.
+				</p>
+				<div class="button">
+						<a href="" class="button-color">JOIN US NOW</a>
+				</div>
+		</div>
+		<!--banner-2-end-->
+		<!--banner-3-start-->
+		<div class="banner-3">
+			<div class="inner-div">
+				<div class="internal-div">
+					<img src="1st-position.png" width="250px" height="120px" class="pad">
+					<h2>Program 1</h2>
+					<p class="discription">
+						sint occaecat cupidatat non 
+					</p>
+				</div>
+				<div class="internal-div-2">
+					<img src="2nd-position.png" width="250px" height="120px" class="pad">
+					<h2>Program 2</h2>
+					<p class="discription">
+						sint occaecat cupidatat non 
+					</p>
+				</div>
+				<div class="internal-div-3">
+					<img src="3rd-position.png" width="300px" height="120px" class="pad">
+					<h2>Program 3</h2>
+					<p class="discription">
+						sint occaecat cupidatat non 
+					</p>
+				</div>
+			
+			</div>
+		</div>
+		<!--banner-3-end-->
+		<!--banner-4-start-->
+		<div class="banner-4">
+			<p class="heading">
+				Yoga Breathing <br />or Pranayama
+			</p>
+			<p class="discription">
+				Duis aute irure dolor in reprehenderit in voluptate velit<br /> esse cillum dolore eu fugiat nulla pariatur. Excepteur<br /> sint occaecat cupidatat.
+			</p>
+				<div class="button">
+						<a href="" class="button-color">LEARN MORE</a>
+				</div>
+		</div>
+		<!--banner-4-end-->
+		<!--banner-5-start-->
+		<div class="banner-5">
+			<p class="heading">
+				Join Now and<br />Get 50% Off
+			</p>	
+			<p class="discription">
+				Duis aute irure dolor in reprehenderit in voluptate velit<br /> esse cillum dolore eu fugiat nulla pariatur. Excepteur<br /> sint occaecat cupidatat.
+			</p>
+				<div class="button">
+						<a href="" class="button-color">JOIN NOW</a>
+				</div>
+		</div>
+		<!--banner-5-end-->
+		<!--banner-6-start-->
+		<div class="banner-6">
+			<p class="heading">Galery</p>
+			<p class="discription">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum <br />fusce ut placerat orci nulla pellentesque dignissim enim sit. </p>
+			<div class="internal-div-1-galery">
+				<img src="galery-position-1.jpg" width="357px" height="377px"/>
+				<p class="Facilis-Gravida">Facilis Gravida</p>
+				<p class="discription-1 galary-disc">A lacus vestibulum sed. Amet purus<br /> gravida quis blandit turpis.</p>
+			</div>
+			<div class="internal-div-2-galery">
+				<img src="galery-position-2.jpg" width="357px" height="377px"/>
+				<p class="Facilis-Gravida">Facilis Gravida</p>
+				<p class="discription-1 galary-disc">A lacus vestibulum sed. Amet purus<br /> gravida quis blandit turpis.</p>
+			</div>
+			<div class="internal-div-3-galery">
+				<img src="galery-position-3.jpg" width="357px" height="377px"/>
+				<p class="Facilis-Gravida">Facilis Gravida</p>
+				<p class="discription-1 galary-disc">A lacus vestibulum sed. Amet purus<br /> gravida quis blandit turpis.</p>
+			</div>
+		</div>
+		<!--banner-6-end-->
+		<!--banner-7-start-->
+		<div class="banner-7">
+			<div class="internal-div-1">
+				
+					<iframe width="630px" height="450px" class="ifram" src="https://www.youtube.com/embed/qdCWbJRbli0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="internal-div-2">
+				<p class="heading">Yoga Training<br />Video Showreel</p>
+				<p class="discription">Duis aute irure dolor in reprehenderit in voluptate velit<br /> esse cillum dolore eu fugiat nulla pariatur. Excepteur <br />sint occaecat cupidatat.</p>
+				<div class="social-media-div fb-gap"><a href="https://www.google.com/search?q=facebook+login&rlz=1C1CHBF_enIN1024IN1024&oq=facebook+&aqs=chrome.3.69i57j69i59l3j0i512j0i131i433i512j69i60l2.4836j0j7&sourceid=chrome&ie=UTF-8"><img src="640px-Facebook-icon-1-removebg-preview.png" width="40px" height="40px" style="margin-top:2px;"/></a></div>
+				<div class="social-media-div social-media-gap insta"><a href="https://www.google.com/search?q=instagram+login&rlz=1C1CHBF_enIN1024IN1024&sxsrf=ALiCzsZ096Dlibn-_EYuePy7KlEPQZQM8Q%3A1667833838368&ei=7h9pY4aGFuvu4-EPqMeUyAQ&oq=+login&gs_lp=Egxnd3Mtd2l6LXNlcnC4AQH4AQEqAggCMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB7CAgoQABhHGNYEGLADwgIHEAAYsAMYQ5AGCkjOHFCRBFimCXABeAHIAQCQAQCYAaUCoAHZCaoBAzItNeIDBCBBGADiAwQgRhgAiAYB&sclient=gws-wiz-serp"></a></div>
+				<div class="social-media-div social-media-gap"><a href="https://twitter.com/i/flow/login"><img src="twitter-icon-white-transparent-11549537259z0sowbg17j-removebg-preview.png" width="40px" height="40px" style="margin-top:2px; margin-left:2px;"/></a></div>
+			</div>
+		</div>
+		<!--banner-7-end-->
+		<!--banner-8-start-->
+		<div class="banner-8">
+			<p class="heading">Get in Touch</p>
+			<p class="discription">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum <br />fusce ut placerat orci nulla pellentesque dignissim enim sit. </p>
+			<form>
+				<input type="text" placeholder="Your Name" class="name"/>
+				<input type="text" placeholder="Gender" class="Gender"/>
+				<input type="text" placeholder="Messages" class="msg"/>
+			</form>
+			<div class="button">
+						<a href="" class="button-color">SEND MESSAGE</a>
+			</div>
+		</div>
+		<!--banner-8-end-->
+		<!--footer-start-->
+		<div class="main-wrapper-footer">
+			<div class="footer-main-div">
+				<div class="footer-inner-div-1">
+					<p class="heading-footer">Your Comapny</p>
+					<p class="address">Halimun  Street 25<br /> Jakarta, Indonesia <br />12850</p>
+					<p class="web-site"><a href="" class="web-site">www.yourdomain.com</a></p>
+
+				</div>
+				<div class="footer-inner-div-2">
+					<ul type="none">
+						<li><strong>Sitemap</strong></li><br />
+						<a href="" class="color"><li>Home</li></a><br />
+						<a href="" class="color"><li>About</li></a><br />
+						<a href="" class="color"><li>Blog</li></a><br />
+						<a href="" class="color"><li>Menu</li></a><br />
+						<a href="" class="color"><li>Store</li></a><br />
+						<a href="" class="color"><li>Contact</li></a> <br />
+					</ul>
+				</div>
+				<div class="footer-inner-div-3">
+					<ul type="none">
+						<li><strong>Lorem Ipsum</strong></li></a><br />
+						<a href="" class="color"><li>Neque</li></a><br />
+						<a href="" class="color"><li>Suspendisse</li></a><br />
+						<a href="" class="color"><li>Dictum</li></a><br />
+						<a href="" class="color"><li>Porttitor</li></a><br />
+						<a href="" class="color"><li>Tincidunt</li></a><br />
+						<a href="" class="color"><li>Enim lobortis </li></a><br />
+					</ul>
+				</div>
+				<div class="footer-inner-div-4">
+					<ul type="none">
+						<li><strong>Sit Amet</strong></li><br />
+						<a href="" class="color"><li>Neque</li></a><br />
+						<a href="" class="color"><li>Suspendisse</li></a><br />
+						<a href="" class="color"><li>Dictum</li></a><br />
+						<a href="" class="color"><li>Porttitor</li></a><br />
+						<a href="" class="color"><li>Tincidunt</li></a><br />
+						<a href="" class="color"><li>Enim lobortis</li></a> <br />
+					</ul>
+				</div>
+				<div class="footer-inner-div-5">
+					<p class="copyright">Copyright ©  2020 Freepik<br />
+					Company S.L. All rights reserved.</p>
+					<div class="social-media-div"><a href="https://www.google.com/search?q=facebook+login&rlz=1C1CHBF_enIN1024IN1024&oq=facebook+&aqs=chrome.3.69i57j69i59l3j0i512j0i131i433i512j69i60l2.4836j0j7&sourceid=chrome&ie=UTF-8"><img src="fb-removebg-preview.png" width="25px" height="25px" style="margin-top:2px;"/></a></div>
+					<div class="social-media-div social-media-gap"><a href="https://www.google.com/search?q=instagram+login&rlz=1C1CHBF_enIN1024IN1024&sxsrf=ALiCzsZ096Dlibn-_EYuePy7KlEPQZQM8Q%3A1667833838368&ei=7h9pY4aGFuvu4-EPqMeUyAQ&oq=+login&gs_lp=Egxnd3Mtd2l6LXNlcnC4AQH4AQEqAggCMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB7CAgoQABhHGNYEGLADwgIHEAAYsAMYQ5AGCkjOHFCRBFimCXABeAHIAQCQAQCYAaUCoAHZCaoBAzItNeIDBCBBGADiAwQgRhgAiAYB&sclient=gws-wiz-serp"><img src="insta-removebg-preview.png" width="25px" height="25px" style="margin-top:2px; margin-left:2px;"/></a></div>
+					<div class="social-media-div social-media-gap"><a href="https://twitter.com/i/flow/login"><img src="twit-removebg-preview.png" width="25px" height="25px" style="margin-top:2px; margin-left:2px;"/></a></div>
+				</div>
+			</div>
+		
+		</div>
+	<!--footer-end-->
+	</body>	
+</html>
